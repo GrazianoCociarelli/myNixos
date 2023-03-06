@@ -10,9 +10,6 @@
 
     nixos-cn.url = "github:nixos-cn/flakes";
     nixos-cn.follows = "nixpkgs";
-
-    nur.url = "github:nix-community/NUR";
-    nur.inputs.nixpkgs.follows = "nixpkgs";
   };
 
   outputs = { self, nixpkgs }:
