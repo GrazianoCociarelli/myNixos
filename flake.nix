@@ -1,30 +1,29 @@
 {
-  description = "Nixos desktop configuration";
+  description = "NixOS configuration";
 
-  # the source of packages 
   inputs = {
-    nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
-
+    nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
     home-manager.url = "github:nix-community/home-manager";
-    home-manager.follows = "nixpkgs";
-
-    nixos-cn.url = "github:nixos-cn/flakes";
-    nixos-cn.follows = "nixpkgs";
+    home-manager.inputs.nixpkgs.follows = "nixpkgs";
   };
 
-  outputs = { self, nixpkgs, home-manager, ... }:
-    let system = "x86_64-linux";
-    in {
-      nixosConfigurations."kvm" = nixpkgs.lib.nixosSystem {
-        inherit system;
+  outputs = inputs@{ nixpkgs, home-manager, ... }: {
+    nixosConfigurations = {
+      hostname = nixpkgs.lib.nixosSystem {
+        system = "x86_64-linux";
         modules = [
           ./system/configuration.nix
-        
-          inputs.home-manager.nixosModules.home-manager {
+          home-manager.nixosModules.home-manager
+          {
             home-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;
+            home-manager.users.jdoe = import ./home.nix;
+
+            # Optionally, use home-manager.extraSpecialArgs to pass
+            # arguments to home.nix
           }
         ];
       };
     };
+  };
 }
