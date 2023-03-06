@@ -2,14 +2,14 @@
   description = "Nixos desktop configuration";
 
   # the source of packages 
-  input = {
-    nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstalbe";
+  inputs = {
+    nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
 
     home-manager.url = "github:nix-community/home-manager";
     home-manager.follows = "nixpkgs";
 
     nixos-cn.url = "github:nixos-cn/flakes";
-    nixos-follows = "nixpkgs";
+    nixos-cn.follows = "nixpkgs";
 
     nur.url = "github:nix-community/NUR";
     nur.inputs.nixpkgs.follows = "nixpkgs";
