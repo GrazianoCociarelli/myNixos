@@ -1,12 +1,11 @@
 {
-#  nixpkgs.overlays = [
-#    (final: prev: {
-#      dwm = prev.dwm.overrideAttrs (old: { src = ./mydwm ;});
-#    })
-    
-#    (final: prev: {
-#      slstatus = prev.slstatus.overrideAttrs (old: { src = ./mystatus ;});
-#    })
-
-#  ];  
- }
+  nixpkgs.overlays = [
+    (self: super: {
+      dwm = super.dwm.overrideAttrs (oldAttrs: rec {
+        patches =  [
+          ./mydwm.diff
+        ];
+      });
+    })
+  ];
+}
