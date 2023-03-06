@@ -20,7 +20,7 @@
         modules = [
           ./system/configuration.nix
         
-          inputs.home-manager.nixosModules.home-manager {
+          home-manager.nixosModules.home-manager {
             nixpkgs.config.allowUnfree = true;
             home-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;
