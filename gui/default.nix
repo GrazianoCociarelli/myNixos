@@ -3,7 +3,7 @@
     (self: super: {
       dwm = super.dwm.overrideAttrs (oldAttrs: rec {
         patches =  [
-          ./mydwm.diff
+          ./mydwm.patch
         ];
       });
     })
