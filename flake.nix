@@ -15,7 +15,7 @@
   outputs = { self, nixpkgs, ... } @ inputs:
     let system = "x86_64-linux";
     in {
-      nixosConfiguration.myhost = nixpkgs.lib.nixosSystem {
+      nixosConfigurations."kvm" = nixpkgs.lib.nixosSystem {
         inherit system;
         modules = [
           ./system/configuration.nix
