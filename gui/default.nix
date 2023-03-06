@@ -17,9 +17,4 @@
     })
   ];
 
-  home.file.".xinitrc".text = "
-    slstatus &
-    sh screenlayout.sh &
-    exec dwm
-    ";
 }
