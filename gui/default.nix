@@ -7,5 +7,13 @@
         ];
       });
     })
+
+     (self: super: {
+      slstatus = super.slstatus.overrideAttrs (oldAttrs: rec {
+        patches =  [
+          ./mystatus.patch
+        ];
+      });
+    })
   ];
 }
