@@ -15,7 +15,7 @@
   outputs = { self, nixpkgs, ... } @ inputs:
     let system = "x86_64-linux";
     in {
-      nixosConfiguration."ThinkP" = nixpkgs.lib.nixosSystem {
+      nixosConfiguration."nixos" = nixpkgs.lib.nixosSystem {
         inherit system;
         modules = [
           ./system/configuration.nix
