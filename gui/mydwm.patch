@@ -1,10 +1,16 @@
-diff --git a/config.def.h b/config.h
-similarity index 90%
-rename from config.def.h
-rename to config.h
-index 9efa774..9037a4b 100644
+From 35ed2f68bd5e71b4f4e095cf1190a42552d4c37e Mon Sep 17 00:00:00 2001
+From: grazianocociarelli <grazianocociarelli@proton.me>
+Date: Mon, 6 Mar 2023 21:16:01 +0800
+Subject: [PATCH] update
+
+---
+ config.def.h | 25 +++++++++++++------------
+ 1 file changed, 13 insertions(+), 12 deletions(-)
+
+diff --git a/config.def.h b/config.def.h
+index 061ad66..9037a4b 100644
 --- a/config.def.h
-+++ b/config.h
++++ b/config.def.h
 @@ -1,17 +1,17 @@
  /* See LICENSE file for copyright and license details. */
  
@@ -39,11 +45,14 @@ index 9efa774..9037a4b 100644
  static const int lockfullscreen = 1; /* 1 will force focus on the fullscreen window */
  
  static const Layout layouts[] = {
-@@ -58,9 +58,9 @@ static const Layout layouts[] = {
+@@ -56,10 +56,11 @@ static const Layout layouts[] = {
+ #define SHCMD(cmd) { .v = (const char*[]){ "/bin/sh", "-c", cmd, NULL } }
+ 
  /* commands */
- static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
- static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont, "-nb", col_gray1, "-nf", col_gray3, "-sb", col_cyan, "-sf", col_gray4, NULL };
+-static const char *dmenucmd[] = { "dmenu_run", "-fn", dmenufont, "-nb", col_gray1, "-nf", col_gray3, "-sb", col_cyan, "-sf", col_gray4, NULL };
 -static const char *termcmd[]  = { "st", NULL };
++static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
++static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont, "-nb", col_gray1, "-nf", col_gray3, "-sb", col_cyan, "-sf", col_gray4, NULL };
 +static const char *termcmd[]  = { "alacritty", NULL };
  
 -static const Key keys[] = {
@@ -51,7 +60,7 @@ index 9efa774..9037a4b 100644
  	/* modifier                     key        function        argument */
  	{ MODKEY,                       XK_p,      spawn,          {.v = dmenucmd } },
  	{ MODKEY|ShiftMask,             XK_Return, spawn,          {.v = termcmd } },
-@@ -73,7 +73,7 @@ static const Key keys[] = {
+@@ -72,7 +73,7 @@ static const Key keys[] = {
  	{ MODKEY,                       XK_l,      setmfact,       {.f = +0.05} },
  	{ MODKEY,                       XK_Return, zoom,           {0} },
  	{ MODKEY,                       XK_Tab,    view,           {0} },
@@ -60,7 +69,7 @@ index 9efa774..9037a4b 100644
  	{ MODKEY,                       XK_t,      setlayout,      {.v = &layouts[0]} },
  	{ MODKEY,                       XK_f,      setlayout,      {.v = &layouts[1]} },
  	{ MODKEY,                       XK_m,      setlayout,      {.v = &layouts[2]} },
-@@ -94,12 +94,12 @@ static const Key keys[] = {
+@@ -93,12 +94,12 @@ static const Key keys[] = {
  	TAGKEYS(                        XK_7,                      6)
  	TAGKEYS(                        XK_8,                      7)
  	TAGKEYS(                        XK_9,                      8)
@@ -75,3 +84,6 @@ index 9efa774..9037a4b 100644
  	/* click                event mask      button          function        argument */
  	{ ClkLtSymbol,          0,              Button1,        setlayout,      {0} },
  	{ ClkLtSymbol,          0,              Button3,        setlayout,      {.v = &layouts[2]} },
+-- 
+2.38.4
+
