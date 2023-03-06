@@ -16,4 +16,10 @@
       });
     })
   ];
+
+  home.file.".xinitrc" = "
+    slstatus &
+    sh screenlayout.sh &
+    exec dwm
+    ";
 }
