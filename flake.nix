@@ -5,14 +5,14 @@
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
 
-   #home-manager.url = "github:nix-community/home-manager";
-   #home-manager.follows = "nixpkgs";
+    home-manager.url = "github:nix-community/home-manager";
+    home-manager.follows = "nixpkgs";
 
     nixos-cn.url = "github:nixos-cn/flakes";
     nixos-cn.follows = "nixpkgs";
   };
 
-  outputs = { self, nixpkgs }:
+  outputs = { self, nixpkgs }@inputs:
     let system = "x86_64-linux";
     in {
       nixosConfiguration."ThinkP" = nixpkgs.lib.nixosSystem {
