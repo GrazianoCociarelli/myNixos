@@ -8,9 +8,9 @@
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
   imports =
     [ # Include the results of the hardware scan.
-      ../hardware-configuration.nix
-      ./apps/vim
-      ./gui
+      ./hardware-configuration.nix
+      ../apps/vim
+      ../gui
       #...
     ];
 
@@ -128,9 +128,9 @@
   services.xserver.videoDrivers = [ "modesetting" ];
   services.xserver.displayManager.startx.enable = true;
 
-  qt5.enable = true;
-  qt5.platformTheme = "gtk2";
-  qt5.style = "gtk2";
+  qt.enable = true;
+  qt.platformTheme = "gtk2";
+  qt.style = "gtk2";
 
   users.defaultUserShell = pkgs.fish; 
 
