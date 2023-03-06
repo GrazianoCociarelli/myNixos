@@ -17,8 +17,7 @@
           {
             home-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;
-            home-manager.users.wwt = import ./home.nix;
-            home-manager.users.wwt.isNormalUser = true;
+            home-manager.users.wangwutang = import ./home.nix;
             # Optionally, use home-manager.extraSpecialArgs to pass
             # arguments to home.nix
           }

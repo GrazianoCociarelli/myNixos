@@ -1,5 +1,5 @@
 {
-  home.username = "wwt";
+  home.username = "wangwutang";
   home.file.".xinitrc".text = "
     slstatus &
     exec dwm
