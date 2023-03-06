@@ -1,4 +1,5 @@
 {
+  users.users.wwt.isNormalUser = true;
   home.username = "wwt";
   home.file.".xinitrc".text = "
     slstatus &
