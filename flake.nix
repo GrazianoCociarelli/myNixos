@@ -12,7 +12,7 @@
     nixos-cn.follows = "nixpkgs";
   };
 
-  outputs = { self, nixpkgs, home-manager, ... }@inputs:
+  outputs = { self, nixpkgs, home-manager, ... }:
     let system = "x86_64-linux";
     in {
       nixosConfigurations."kvm" = nixpkgs.lib.nixosSystem {
