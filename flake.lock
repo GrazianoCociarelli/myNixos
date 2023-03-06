@@ -18,6 +18,9 @@
     },
     "root": {
       "inputs": {
+        "home-manager": [
+          "nixpkgs"
+        ],
         "nixos-cn": [
           "nixpkgs"
         ],
