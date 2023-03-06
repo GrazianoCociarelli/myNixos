@@ -1,7 +1,20 @@
-diff --git a/config.def.h b/config.def.h
+From d42ab3ca2e75867d14b3ea38a5aa442778291c37 Mon Sep 17 00:00:00 2001
+From: grazianocociarelli <grazianocociarelli@proton.me>
+Date: Mon, 6 Mar 2023 21:03:06 +0800
+Subject: [PATCH] first
+
+---
+ config.def.h => config.h | 22 +++++++++++-----------
+ 1 file changed, 11 insertions(+), 11 deletions(-)
+ rename config.def.h => config.h (90%)
+
+diff --git a/config.def.h b/config.h
+similarity index 90%
+rename from config.def.h
+rename to config.h
 index 9efa774..9037a4b 100644
 --- a/config.def.h
-+++ b/config.def.h
++++ b/config.h
 @@ -1,17 +1,17 @@
  /* See LICENSE file for copyright and license details. */
  
@@ -72,3 +85,6 @@ index 9efa774..9037a4b 100644
  	/* click                event mask      button          function        argument */
  	{ ClkLtSymbol,          0,              Button1,        setlayout,      {0} },
  	{ ClkLtSymbol,          0,              Button3,        setlayout,      {.v = &layouts[2]} },
+-- 
+2.38.4
+
