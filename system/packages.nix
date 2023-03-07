@@ -25,5 +25,8 @@
     zip
     git
     gnumake
+
+#    texlive.combined.scheme-full
+    python39
   ];
 }

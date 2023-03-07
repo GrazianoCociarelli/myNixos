@@ -51,6 +51,7 @@
     fcitx5-gtk
     fcitx5-configtool
     fcitx5-chinese-addons
+    fcitx5-with-addons
   ];
   i18n.extraLocaleSettings = {
     LC_ADDRESS = "zh_CN.UTF-8";
@@ -121,6 +122,7 @@
     ];
   };
   
+  services.v2raya.enable = true;
   services.unclutter.enable = true;
  
   # services.xserver.enable = true;
