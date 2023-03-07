@@ -3,6 +3,7 @@
     ./startx.nix
     ./alacritty.nix
     ./neovim
+    ./rime
     ./qutebrowser.nix
     ./zathura.nix
   ];

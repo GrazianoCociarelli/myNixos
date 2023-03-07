@@ -26,7 +26,7 @@
     git
     gnumake
     
-    fcitx5-with-addons
+    rime-data    
 #    texlive.combined.scheme-full
     python39
   ];

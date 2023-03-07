@@ -45,14 +45,17 @@
   hardware.pulseaudio.enable = true;  
 
   # Select internationalisation properties.
-  i18n.defaultLocale = "en_US.UTF-8";
-  
-  i18n.inputMethod.enabled = "fcitx5";
-  i18n.inputMethod.fcitx5.addons = with pkgs; [
-    fcitx5-chinese-addons
-    fcitx5-configtool
-  ];
+   i18n.defaultLocale = "en_US.UTF-8";
+   i18n.inputMethod.enabled = "ibus";
+   i18n.inputMethod.ibus.engines = [ pkgs.ibus-engines.rime ];
+   environment.variables = rec {
+     GTK_IM_MODULE = "ibus";
+     QT_IM_MODULE  = "ibus";
+     XMODIFIERS    = "@im=ibus";
+   };
 
+  # i18n.inputMethod.fcitx5.addons = with pkgs; [ fcitx5-chinese-addons fcitx5-configtool];
+  
   i18n.extraLocaleSettings = {
     LC_ADDRESS = "zh_CN.UTF-8";
     LC_IDENTIFICATION = "zh_CN.UTF-8";
