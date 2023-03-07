@@ -56,8 +56,20 @@
           statusbar.command.bg = black;
           statusbar.command.fg = white;
 
-          download = {
-            bar.bg = black;
+          downloads.bar.bg = black;
+
+          messages = {
+            info.bg = black;
+            info.border = black;
+            info.fg = white;
+
+            error.bg = red;
+            error.border = red;
+            error.fg = white;
+
+            warning.bg = magenta;
+            warning.border = magenta;
+            warning.fg = white;
           };
       };
     };
