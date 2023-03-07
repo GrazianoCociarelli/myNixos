@@ -1,9 +1,10 @@
-{ programs.qutebrowser = {
+{ 
+  programs.qutebrowser = {
     enable = true;
 
     settings = {
 
-      let
+      colors = with { {
         black   = "#1d1f21";
         red     = "#cc6666";
         green   = "#b5bd68";
@@ -12,8 +13,8 @@
         magenta = "#b294bb";
         cyan    = "#8abeb7";
         white   = "#c5c8c6";
-      in
-      colors = {
+      };
+
 
           completion = {
             category = {
