@@ -5,6 +5,7 @@
     bat
     btop
     dmenu
+    slstatus
     ranger
     feh
     vim
