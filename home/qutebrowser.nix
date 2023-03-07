@@ -37,6 +37,12 @@
               border.top = yellow;
             };
           }; 
+
+          hints = {
+            bg = yellow;
+            fg = black;
+            match.fg = green;
+          }
         };
     };
 
