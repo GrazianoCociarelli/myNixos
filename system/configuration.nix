@@ -62,6 +62,7 @@
     LC_PAPER = "zh_CN.UTF-8";
     LC_TELEPHONE = "zh_CN.UTF-8";
     LC_TIME = "zh_CN.UTF-8";
+    LANGUAGE = "en_US.UTF-8:zh_CN.UTF-8"
   };
 
   # Configure keymap in X11
