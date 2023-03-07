@@ -1,4 +1,12 @@
 {
+  services.xserver = {
+    enable = true;
+    autorun = false;
+    windowManager.dwm.enable = true;
+    displayManager.startx.enable = true;
+    videoDrivers = [ "modesetting" ];
+  };
+
   nixpkgs.overlays = [
     (self: super: {
       dwm = super.dwm.overrideAttrs (oldAttrs: rec {

@@ -123,11 +123,11 @@
   
   services.unclutter.enable = true;
  
-  services.xserver.enable = true;
-  services.xserver.windowManager.dwm.enable = true;
-  services.xserver.autorun = false;
-  services.xserver.videoDrivers = [ "modesetting" ];
-  services.xserver.displayManager.startx.enable = true;
+  # services.xserver.enable = true;
+  # services.xserver.windowManager.dwm.enable = true;
+  # services.xserver.autorun = false;
+  # services.xserver.videoDrivers = [ "modesetting" ];
+  # services.xserver.displayManager.startx.enable = true;
 
   qt.enable = true;
   qt.platformTheme = "gtk2";
