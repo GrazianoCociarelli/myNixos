@@ -4,7 +4,7 @@
 
     settings = {
 
-      colors = with { {
+      colors = with {
         black   = "#1d1f21";
         red     = "#cc6666";
         green   = "#b5bd68";
@@ -15,7 +15,7 @@
         white   = "#c5c8c6";
       };
 
-
+      {
           completion = {
             category = {
               border = {
