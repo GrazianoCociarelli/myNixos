@@ -15,7 +15,6 @@ let myVim = vim_configurable.customize {
       vim-latex-live-preview
       vimtex
       ultisnips
-      vim-monokai
     ];
   };
 };
