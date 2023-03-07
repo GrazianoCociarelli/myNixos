@@ -12,7 +12,7 @@
         blue    = "#81a2be";
         magenta = "#b294bb";
         cyan    = "#8abeb7";
-        white   = "#c5c8c6";
+        white   = "#ffffff";
       };
 
       {
