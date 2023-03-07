@@ -51,6 +51,8 @@
     fcitx5-gtk
     fcitx5-configtool
     fcitx5-chinese-addons
+    fcitx5-rime
+    fcitx5-lua
   ];
   i18n.extraLocaleSettings = {
     LC_ADDRESS = "zh_CN.UTF-8";
