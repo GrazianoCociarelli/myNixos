@@ -9,7 +9,6 @@ let myVim = vim_configurable.customize {
       syntax on
       set nu
       set backspace=indent,eol,start
-      colorscheme monokai
     '';
     plug.plugins = with pkgs.vimPlugins; [
       vim-nix
