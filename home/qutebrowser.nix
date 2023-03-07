@@ -50,7 +50,16 @@
             selected.even.fg = white;
             selected.odd.fg  = white;
           };
-        };
+
+          statusbar.normal.bg = black;
+          statusbar.normal.fg = white;
+          statusbar.command.bg = black;
+          statusbar.command.fg = white;
+
+          download = {
+            bar.bg = black;
+          }
+      };
     };
 
     # TODO
