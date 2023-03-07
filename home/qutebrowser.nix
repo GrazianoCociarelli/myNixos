@@ -41,11 +41,17 @@
           hints = {
             bg = yellow;
             fg = black;
-            match.fg = green;
+            match.fg = red;
+          };
+
+          tabs = {
+            selected.even.bg = black;
+            selected.odd.bg  = black;
+            selected.even.fg = white;
+            selected.odd.fg  = white;
           };
         };
     };
-
 
     # TODO
   };
