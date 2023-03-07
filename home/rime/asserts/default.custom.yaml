@@ -7,4 +7,3 @@ patch:
   schema_list:
     - schema: luna_pinyin          # 朙月拼音
     - schema: double_pinyin_plus
-    - schema: double_pinyin
