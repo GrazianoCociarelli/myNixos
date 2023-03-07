@@ -1,0 +1,25 @@
+{
+  environment.systemPackages = with pkgs; [
+    aspell
+    arandr
+    bat
+    btop
+    dmenu
+    vim
+    fd
+    gcc
+    glow
+    gimp
+    iftop
+    killall
+    neofetch
+    pandoc
+    tree
+    unrar
+    unzip
+    weget
+    zip
+    git
+    gnumake
+  ];
+}

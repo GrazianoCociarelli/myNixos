@@ -87,23 +87,23 @@
 
   # List packages installed in system profile. To search, run:
   # $ nix search wget
-  environment.systemPackages = with pkgs; [
-    git 
-    gnumake
-    wget 
-    curl
-    ranger
-    vim
-    home-manager
-    zathura
-    qutebrowser
-    dmenu
-    st
-    alacritty
-    arandr
-    slstatus
+# environment.systemPackages = with pkgs; [
+#    git 
+#    gnumake
+#    wget 
+#    curl
+#    ranger
+#    vim
+#    home-manager
+#    zathura
+#    qutebrowser
+#    dmenu
+#    st
+#    alacritty
+#    arandr
+#    slstatus
     # mathematica
-  ];
+#  ];
 
   fonts = {
     enableDefaultFonts = true;
