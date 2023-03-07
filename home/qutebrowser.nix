@@ -58,7 +58,7 @@
 
           download = {
             bar.bg = black;
-          }
+          };
       };
     };
 
