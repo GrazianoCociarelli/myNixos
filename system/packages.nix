@@ -25,7 +25,7 @@
     zip
     git
     gnumake
-
+    fcitx5-chinese-addons
 #    texlive.combined.scheme-full
     python39
   ];
