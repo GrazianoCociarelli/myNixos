@@ -5,6 +5,7 @@
     bat
     btop
     dmenu
+    feh
     vim
     fd
     gcc
@@ -14,6 +15,7 @@
     killall
     neofetch
     pandoc
+    pamixer
     tree
     unrar
     unzip
