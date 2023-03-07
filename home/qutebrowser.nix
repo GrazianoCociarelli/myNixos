@@ -42,7 +42,7 @@
             bg = yellow;
             fg = black;
             match.fg = green;
-          }
+          };
         };
     };
 
