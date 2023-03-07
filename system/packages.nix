@@ -19,7 +19,7 @@
     tree
     unrar
     unzip
-    weget
+    wget
     zip
     git
     gnumake
