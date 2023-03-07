@@ -4,8 +4,8 @@
     settings = {
       font = {
         normal = {
-          family = monospace;
-          style = regular;
+          family = "monospace";
+          style = "Regular";
         };
         size = 12;
       };
