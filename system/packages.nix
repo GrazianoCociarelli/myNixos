@@ -25,8 +25,8 @@
     zip
     git
     gnumake
-
-    boost
+    
+    fcitx5-with-addons
 #    texlive.combined.scheme-full
     python39
   ];
