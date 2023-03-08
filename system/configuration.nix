@@ -54,7 +54,7 @@
   #   XMODIFIERS    = "@im=ibus";
   # };
 
-   i18n.inputMethod.fcitx5.addons = with pkgs; [ fcitx5-rime fcitx5-configtool];
+   i18n.inputMethod.fcitx5.addons = with pkgs; [ fcitx5-rime fcitx5-configtool ];
   
   i18n.extraLocaleSettings = {
     LC_ADDRESS = "zh_CN.UTF-8";
@@ -70,7 +70,7 @@
 
   # Configure keymap in X11
   services.xserver = {
-    layout = "us";
+    layout = "cn";
     xkbVariant = "";
   };
 
