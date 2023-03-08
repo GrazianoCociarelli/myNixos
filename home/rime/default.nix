@@ -1,6 +1,6 @@
 {
   home.file.".config/ibus/rime" = {
-    source = ./asserts
+    source = ./asserts; 
     recursive = true;
   };
 }
