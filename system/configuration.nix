@@ -82,11 +82,8 @@
     packages = with pkgs; [];
   };
 
-  programs = {
-    firefox.enable = true;
-    fish.enable = true;
-  };
-
+  programs.fish.enable = true;
+  users.defaultUserShell = pkgs.fish;
   
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;  
