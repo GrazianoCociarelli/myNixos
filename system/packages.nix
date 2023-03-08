@@ -25,9 +25,9 @@
     zip
     git
     gnumake
-    
-    rime-data    
-#    texlive.combined.scheme-full
+        
+    texmacs
+    texlive.combined.scheme-full
     python39
   ];
 }
