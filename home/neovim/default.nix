@@ -36,7 +36,7 @@
       set expandtab
       set relativenumber
       set cc=80
-      colorscheme base-16 tomorrow-night
+      colorscheme base16-tomorrow-night
     '';
   };
 }
