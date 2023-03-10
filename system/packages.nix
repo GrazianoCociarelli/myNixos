@@ -29,5 +29,10 @@
     texmacs
     texlive.combined.scheme-full
     python39
+
+    # neovim-lsp
+    texlab
+    python-lsp-server
+    haskell-language-server
   ];
 }
