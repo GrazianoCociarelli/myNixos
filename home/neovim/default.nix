@@ -26,14 +26,17 @@
       }
 
       ultisnips
-
-      {
-        plugin = nvim-base16;
-        config = ''
-          colorscheme base16-tomorrow-night
-        '';
-      }
+      nvim-base16;
 
     ];
+    
+    extraConfig = ''
+      set encoding=utf8
+      set nocompactible
+      set expandtab
+      set relativenumber
+      set cc=80
+      colorscheme base-16 tomorrow-night
+    '';
   };
 }
