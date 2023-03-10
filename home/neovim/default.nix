@@ -26,6 +26,8 @@
         '';
       }
 
+      coc-texlab
+
       nvim-lspconfig
 
       ultisnips
