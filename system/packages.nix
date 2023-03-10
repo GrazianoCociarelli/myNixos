@@ -30,9 +30,9 @@
     texlive.combined.scheme-full
     python39
 
-    # neovim-lsp
+    # Neovim LSP packages
     texlab
-    python-lsp-server
+    python310Packages.python-lsp-server
     haskell-language-server
   ];
 }
