@@ -22,6 +22,7 @@
           let g:tex_flavor = 'latex'
           let g:vimtex_view_method = 'zathura'
           let g:vomtex_quickfix_mode = 0
+          set encoding=utf8
         '';
       }
 
@@ -31,8 +32,7 @@
     ];
     
     extraConfig = ''
-      set encoding=utf8
-      set nocompactible
+      set nocompatible
       set expandtab
       set relativenumber
       set cc=80
