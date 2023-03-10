@@ -26,17 +26,8 @@
         '';
       }
 
-      {
-        plugin = nvim-lspconfig;
-      }
-
-      {
-        plugin = nvim-lsputils;
-      }
-
-      {
-        plugin = cmp-nvim-lsp;
-      }
+      nvim-cmp
+      cmp-nvim-ultisnips
 
       ultisnips
       nvim-base16
