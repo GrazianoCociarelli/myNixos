@@ -34,6 +34,10 @@
         plugin = nvim-lsputils;
       }
 
+      {
+        plugin = cmp-nvim-lsp;
+      }
+
       ultisnips
       nvim-base16
 
