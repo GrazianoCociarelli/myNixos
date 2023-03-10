@@ -26,8 +26,7 @@
         '';
       }
 
-      nvim-cmp
-      cmp-nvim-ultisnips
+      nvim-lspconfig
 
       ultisnips
       nvim-base16
