@@ -26,6 +26,14 @@
         '';
       }
 
+      {
+        plugin = nvim-lspconfig;
+      }
+
+      {
+        plugin = nvim-lsputils;
+      }
+
       ultisnips
       nvim-base16
 
