@@ -26,7 +26,7 @@
       }
 
       ultisnips
-      nvim-base16;
+      nvim-base16
 
     ];
     
