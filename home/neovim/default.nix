@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ pkgs, lib, ... }:
 {
   programs.neovim = {
     enable = true;
@@ -39,6 +39,6 @@
       colorscheme base16-tomorrow-night
     '';
   
-    extraLuaConfig = ./init.lua;
+    extraLuaConfig = lib.fileContents ./init.lua;
   };
 }
