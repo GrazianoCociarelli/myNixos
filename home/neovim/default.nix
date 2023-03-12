@@ -39,6 +39,6 @@
       colorscheme base16-tomorrow-night
     '';
   
-    extraLuaConfig = ./init.lua
+    extraLuaConfig = ./init.lua;
   };
 }
