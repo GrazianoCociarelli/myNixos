@@ -28,11 +28,11 @@
         
     texmacs
     texlive.combined.scheme-full
-    python39
+    python310
 
     # Neovim LSP packages
     texlab
-    python310Packages.python-lsp-server
+    python310Packages.python-lsp-server # pylsp
     haskell-language-server
   ];
 }
