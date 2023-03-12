@@ -10,6 +10,8 @@
     vim
     fd
     gcc
+    ghc
+    stack
     glow
     gimp
     iftop
