@@ -43,3 +43,81 @@ require'lspconfig'['texlab'].setup{
 }
 
 
+local cmp = require 'cmp'
+local luasnip = require 'luasnip'
+local check_backspace = function()
+    local col = vim.fn.col('.') - 1
+    return col == 0 or vim.fn.getline('.'):sub(col, col):match('%s')
+end
+
+cmp.setup({
+    snippet = {
+        expand = function(args)
+            luasnip.lsp_expand(args.body)
+        end,
+    },
+    formatting = {
+        fields = { 'kind', 'abbr', 'menu' },
+        format = function(entry, item)
+            item.menu = ({
+                buffer = '[Buffer]',
+                luasnip = '[Snip]',
+                nvim_lsp = '[LSP]',
+                nvim_lua = '[API]',
+                path = '[Path]',
+                rg = '[RG]',
+            })[entry.source.name]
+            return item
+        end,
+    },
+    window = { },
+    mapping = cmp.mapping.preset.insert({
+        ['<C-j>'] = cmp.mapping(cmp.mapping.scroll_docs(-4), { 'i', 'c' }),
+        ['<C-k>'] = cmp.mapping(cmp.mapping.scroll_docs(4), { 'i', 'c' }),
+        ['<C-Space>'] = cmp.mapping(cmp.mapping.complete(), { 'i', 'c' }),
+        ['<C-e>'] = cmp.mapping.abort(),
+        ['<CR>'] = cmp.mapping.confirm({ select = true }),
+        ['<Tab>'] = cmp.mapping(function(fallback)
+            if cmp.visible() then
+                cmp.select_next_item()
+            elseif luasnip.expand_or_jumpable() then
+                luasnip.expand_or_jump()
+            elseif check_backspace() then
+                fallback()
+            else
+                fallback()
+            end
+        end, {
+            'i',
+            's',
+        }),
+    }),
+    sources = cmp.config.sources({
+        { name = 'nvim_lsp', priority = 5 },
+        { name = 'buffer', priority = 4 },
+        { name = 'rg', priority = 3 },
+        { name = 'luasnip', priority = 2 },
+        { name = 'path', priority = 1 },
+        { name = 'nvim_lsp_signature_help' },
+        { name = 'nvim_lua' },
+    }),
+})
+
+capabilities = require('cmp_nvim_lsp').default_capabilities()
+local servers = { 'gopls', 'rust_analyzer', 'nil_ls', 'clangd' }
+for _, lsp in pairs(servers) do
+  require('lspconfig')[lsp].setup {
+    on_attach = on_attach,
+    capabilities = capabilities,
+    flags = {
+      debounce_text_changes = 150,
+    },
+    settings = {
+      ['nil'] = {
+        formatting = {
+          command = { 'nixpkgs-fmt' }
+        }
+      },
+    }
+  }
+end

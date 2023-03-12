@@ -26,9 +26,15 @@
 
       nvim-lspconfig
 
-      ultisnips
-      nvim-base16
+      nvim-cmp
+      cmp_luasnip
+      cmp-buffer
+      cmp-nvim-lsp
+      cmp-cmdline
+      cmp-path
+      luasnip
 
+      nvim-base16
     ];
     
     extraConfig = ''
