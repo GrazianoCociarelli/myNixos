@@ -7,7 +7,6 @@
     dmenu
     slstatus
     feh
-    vim
     fd
     gcc
     ghc
