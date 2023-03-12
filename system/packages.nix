@@ -32,6 +32,7 @@
 
     # Neovim LSP packages
     texlab
+    rnix-lsp
     python310Packages.python-lsp-server # pylsp
     haskell-language-server
   ];

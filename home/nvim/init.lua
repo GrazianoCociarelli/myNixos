@@ -42,6 +42,12 @@ require'lspconfig'['texlab'].setup{
     flags = lsp_flags,
 }
 
+require'lspconfig'['rnix-lsp'].setup{
+    on_attach = on_attach,
+    flags = lsp_flags,
+}
+
+
 
 -- nvim-cmp configuration
 local cmp = require 'cmp'

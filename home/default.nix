@@ -2,7 +2,7 @@
   imports = [
     ./startx.nix
     ./alacritty.nix
-    ./neovim
+    ./nvim
     ./rime
     ./qutebrowser.nix
     ./zathura.nix
