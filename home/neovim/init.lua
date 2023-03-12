@@ -43,6 +43,7 @@ require'lspconfig'['texlab'].setup{
 }
 
 
+-- nvim-cmp configuration
 local cmp = require 'cmp'
 local luasnip = require 'luasnip'
 local check_backspace = function()
@@ -76,7 +77,7 @@ cmp.setup({
         ['<C-k>'] = cmp.mapping(cmp.mapping.scroll_docs(4), { 'i', 'c' }),
         ['<C-Space>'] = cmp.mapping(cmp.mapping.complete(), { 'i', 'c' }),
         ['<C-e>'] = cmp.mapping.abort(),
-        ['<CR>'] = cmp.mapping.confirm({ select = true }),
+        ['<C-CR>'] = cmp.mapping.confirm({ select = true }),
         ['<Tab>'] = cmp.mapping(function(fallback)
             if cmp.visible() then
                 cmp.select_next_item()

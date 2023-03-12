@@ -11,7 +11,7 @@
         config = ''
           let g:livepreview_previewer = 'zathura'
           let g:livepreview_engine = 'pdflatex'
-          autocmd Filetype tex setl updatetime=500
+          autocmd Filetype tex setl updatetime=1500
         '';
       }
       {
@@ -41,7 +41,8 @@
       set nocompatible
       set expandtab
       set relativenumber
-      set cc=80
+      set cc=100 
+      set pumheight=10 
       colorscheme base16-tomorrow-night
     '';
   
