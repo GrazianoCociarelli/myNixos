@@ -6,7 +6,6 @@
     btop
     dmenu
     slstatus
-    ranger
     feh
     vim
     fd
@@ -25,10 +24,12 @@
     zip
     git
     gnumake
-        
+
+    tdesktop
     texmacs
     texlive.combined.scheme-full
     python310
+    ghc
 
     # Neovim LSP packages
     texlab
