@@ -5,6 +5,7 @@
     bat
     btop
     dmenu
+    ranger
     slstatus
     feh
     fd
