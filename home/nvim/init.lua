@@ -37,17 +37,6 @@ local lsp_flags = {
   debounce_text_changes = 150,
 }
 
-require'lspconfig'['texlab'].setup{
-    on_attach = on_attach,
-    flags = lsp_flags,
-}
-
-require'lspconfig'['rnix-lsp'].setup{
-    on_attach = on_attach,
-    flags = lsp_flags,
-}
-
-
 
 -- nvim-cmp configuration
 local cmp = require 'cmp'
@@ -111,7 +100,8 @@ cmp.setup({
 })
 
 capabilities = require('cmp_nvim_lsp').default_capabilities()
-local servers = { 'gopls', 'rust_analyzer', 'nil_ls', 'clangd' }
+
+local servers = { 'gopls', 'rust_analyzer', 'nil_ls', 'clangd', 'texlab' }
 for _, lsp in pairs(servers) do
   require('lspconfig')[lsp].setup {
     on_attach = on_attach,
