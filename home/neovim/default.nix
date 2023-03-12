@@ -6,7 +6,6 @@
     plugins = with pkgs.vimPlugins; [
 
       vim-nix
-      
       {
         plugin = vim-latex-live-preview;
         config = ''
@@ -15,7 +14,6 @@
           autocmd Filetype tex setl updatetime=500
         '';
       }
-
       {
         plugin = vimtex;
         config = ''
@@ -25,8 +23,6 @@
           set encoding=utf8
         '';
       }
-
-      coc-texlab
 
       nvim-lspconfig
 
@@ -42,5 +38,7 @@
       set cc=80
       colorscheme base16-tomorrow-night
     '';
+  
+    extraLuaConfig = ./init.lua
   };
 }
