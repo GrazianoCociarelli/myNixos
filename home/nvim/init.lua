@@ -40,7 +40,7 @@ local lsp_flags = {
 
 -- nvim-cmp configuration
 local cmp = require 'cmp'
-local luasnip = require 'luasnip'
+local snip = require 'ultisnips'
 local check_backspace = function()
     local col = vim.fn.col('.') - 1
     return col == 0 or vim.fn.getline('.'):sub(col, col):match('%s')
@@ -49,7 +49,7 @@ end
 cmp.setup({
     snippet = {
         expand = function(args)
-            luasnip.lsp_expand(args.body)
+            snip.lsp_expand(args.body)
         end,
     },
     formatting = {
@@ -57,7 +57,7 @@ cmp.setup({
         format = function(entry, item)
             item.menu = ({
                 buffer = '[Buffer]',
-                luasnip = '[Snip]',
+                snip = '[Snip]',
                 nvim_lsp = '[LSP]',
                 nvim_lua = '[API]',
                 path = '[Path]',
@@ -66,7 +66,7 @@ cmp.setup({
             return item
         end,
     },
-    window = { },
+    window = { }
     mapping = cmp.mapping.preset.insert({
         ['<C-j>'] = cmp.mapping(cmp.mapping.scroll_docs(-4), { 'i', 'c' }),
         ['<C-k>'] = cmp.mapping(cmp.mapping.scroll_docs(4), { 'i', 'c' }),
@@ -76,8 +76,8 @@ cmp.setup({
         ['<Tab>'] = cmp.mapping(function(fallback)
             if cmp.visible() then
                 cmp.select_next_item()
-            elseif luasnip.expand_or_jumpable() then
-                luasnip.expand_or_jump()
+            elseif snip.expand_or_jumpable() then
+                snip.expand_or_jump()
             elseif check_backspace() then
                 fallback()
             else
@@ -92,7 +92,7 @@ cmp.setup({
         { name = 'nvim_lsp', priority = 5 },
         { name = 'buffer', priority = 4 },
         { name = 'rg', priority = 3 },
-        { name = 'luasnip', priority = 2 },
+        { name = 'snip', priority = 2 },
         { name = 'path', priority = 1 },
         { name = 'nvim_lsp_signature_help' },
         { name = 'nvim_lua' },
