@@ -34,6 +34,13 @@
       cmp_luasnip
       luasnip
 
+      {
+        plugin = ultisnips;
+        config = ''
+          let g:UltiSnipsExpandTrigger="<tab>"
+        '';
+      }
+
       nvim-base16
     ];
     

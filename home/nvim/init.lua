@@ -119,4 +119,4 @@ for _, lsp in pairs(servers) do
   }
 end
 
-require("luasnip.loaders.from_snipmate").lazy_load()
+--require("luasnip.loaders.from_snipmate").lazy_load()
