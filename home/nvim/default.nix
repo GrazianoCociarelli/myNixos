@@ -17,10 +17,9 @@
       {
         plugin = vimtex;
         config = ''
-          let g:tex_flavor = 'latex'
-          let g:vimtex_view_method = 'zathura'
-          let g:vomtex_quickfix_mode = 0
-          set encoding=utf8
+          let g:tex_flavor='latex'
+          let g:vimtex_view_method='zathura'
+          let g:vomtex_quickfix_mode=0
         '';
       }
 
@@ -48,8 +47,9 @@
     extraLuaConfig = lib.fileContents ./init.lua;
   };
 
-  home.file.".config/nvim/snippets" = {
+  home.file.".config/nvim/UltiSnips" = {
     recursive = true;
-    source = ./snippets;
+    source = ./snippets
+    ;
   };
 }
