@@ -1,3 +1,4 @@
+set rnu
 set nocompatible
 set expandtab
 set cc=100

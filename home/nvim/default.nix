@@ -40,6 +40,4 @@
     extraConfig = lib.fileContents ./init.vim;
     extraLuaConfig = lib.fileContents ./init.lua;
   };
-
-  home.file.".config/nvimpager/init.vim".source = ./init.vim;
 }
