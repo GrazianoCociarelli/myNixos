@@ -38,15 +38,8 @@
     ];
     
     extraConfig = lib.fileContents ./init.vim;
-#   ''
-#      set nocompatible
-#      set expandtab
-#      set relativenumber
-#      set cc=100 
-#      set pumheight=10 
-#      colorscheme base16-tomorrow-night
-#    '';
-  
     extraLuaConfig = lib.fileContents ./init.lua;
   };
+
+  home.file.".config/nvimpager/init.vim".source = ./init.vim;
 }
