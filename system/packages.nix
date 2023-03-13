@@ -2,7 +2,7 @@
   environment.systemPackages = with pkgs; [
     aspell
     arandr
-    bat
+   # bat
     btop
     dmenu
     ranger
