@@ -1,4 +1,4 @@
-set nocompactible
+set nocompatible
 set expandtab
 set cc=100
 set pumheight=10
