@@ -31,8 +31,8 @@
       cmp-nvim-lsp
       cmp-cmdline
       cmp-path
-      cmp-nvim-ultisnips
-      ultisnips
+      cmp_luasnip
+      luasnip
 
       nvim-base16
     ];

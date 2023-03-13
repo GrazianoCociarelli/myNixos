@@ -40,7 +40,7 @@ local lsp_flags = {
 
 -- nvim-cmp configuration
 local cmp = require 'cmp'
-local snip = require 'ultisnips'
+local snip = require 'luasnip'
 local check_backspace = function()
     local col = vim.fn.col('.') - 1
     return col == 0 or vim.fn.getline('.'):sub(col, col):match('%s')
@@ -66,7 +66,7 @@ cmp.setup({
             return item
         end,
     },
-    window = { }
+    window = { },
     mapping = cmp.mapping.preset.insert({
         ['<C-j>'] = cmp.mapping(cmp.mapping.scroll_docs(-4), { 'i', 'c' }),
         ['<C-k>'] = cmp.mapping(cmp.mapping.scroll_docs(4), { 'i', 'c' }),
