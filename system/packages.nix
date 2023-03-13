@@ -32,7 +32,7 @@
     python310
     ghc
 
-    nvimpager
+    vimpager
     # Neovim LSP packages
     texlab
     nil
