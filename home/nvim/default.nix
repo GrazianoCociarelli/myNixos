@@ -40,4 +40,9 @@
     extraConfig = lib.fileContents ./init.vim;
     extraLuaConfig = lib.fileContents ./init.lua;
   };
+
+  home.file.".config/nvim/snippets" = {
+    recursive = true;
+    source = ./snippets;
+  };
 }
