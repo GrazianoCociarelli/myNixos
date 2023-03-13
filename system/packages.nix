@@ -5,6 +5,7 @@
     btop
     dmenu
     ranger
+    xclip
     slstatus
     feh
     fd
