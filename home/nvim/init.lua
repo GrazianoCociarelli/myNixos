@@ -74,10 +74,10 @@ cmp.setup({
         ['<C-e>'] = cmp.mapping.abort(),
         ['<C-CR>'] = cmp.mapping.confirm({ select = true }),
         ['<Tab>'] = cmp.mapping(function(fallback)
-            if cmp.visible() then
-                cmp.select_next_item()
-            elseif snip.expand_or_jumpable() then
+            if snip.expand_or_jumpable() then
                 snip.expand_or_jump()
+            elseif cmp.visible() then
+                cmp.select_next_item()
             elseif check_backspace() then
                 fallback()
             else
