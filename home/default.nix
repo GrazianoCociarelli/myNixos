@@ -1,10 +1,10 @@
 {
   imports = [
     ./startx.nix
-    ./alacritty
+    ./alacritty.nix
     ./nvim
     ./rime
-    ./qutebrowser.nix
+    ./qutebrowser
     ./zathura.nix
   ];
   home.stateVersion = "22.11";
