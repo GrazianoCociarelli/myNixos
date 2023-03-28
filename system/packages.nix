@@ -33,8 +33,8 @@
     python310
     ghc
 
-    wolfram-notebook
     wolfram-engine
+    mathematica
 
     vimpager
     # Neovim LSP packages
