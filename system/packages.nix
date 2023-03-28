@@ -35,6 +35,7 @@
     ghc
 
     wolfram-engine
+    mathematica
 
     vimpager
     # Neovim LSP packages
