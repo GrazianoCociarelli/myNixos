@@ -27,6 +27,7 @@
     zip
     git
     gnumake
+    picom
 
     tdesktop
     texmacs
