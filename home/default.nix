@@ -1,7 +1,7 @@
 {
   imports = [
     ./startx.nix
-    ./alacritty.nix
+    ./alacritty
     ./nvim
     ./rime
     ./qutebrowser.nix
