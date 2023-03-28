@@ -19,6 +19,7 @@
     neofetch
     pandoc
     pamixer
+    qbittorrent
     tree
     unrar
     unzip
@@ -34,7 +35,6 @@
     ghc
 
     wolfram-engine
-    mathematica
 
     vimpager
     # Neovim LSP packages
