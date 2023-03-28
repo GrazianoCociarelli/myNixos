@@ -1,3 +1,7 @@
+{ 
+  programs.qutebrowser = {
+    enable = true;
+    extraConfig = ''
 # base16-qutebrowser (https://github.com/theova/base16-qutebrowser)
 # Scheme name: Tomorrow Night
 # Scheme author: Chris Kempson (http://chriskempson.com)
@@ -300,3 +304,6 @@ c.colors.tabs.selected.even.bg = base02
 # Background color for webpages if unset (or empty to use the theme's
 # color).
 # c.colors.webpage.bg = base00
+    '';
+  };
+}
