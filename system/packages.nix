@@ -33,6 +33,9 @@
     python310
     ghc
 
+    wolfram-notebook
+    wolfram-engine
+
     vimpager
     # Neovim LSP packages
     texlab
