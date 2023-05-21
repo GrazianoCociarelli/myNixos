@@ -20,20 +20,16 @@
   ];
 
   # Bootloader.
-  boot.loader.grub.enable = true;
-  boot.loader.grub.device = "/dev/vda";
-  boot.loader.grub.useOSProber = true;
+  boot.loader.systemd-boot.enable = true;
+  boot.loader.efi.canTouchEfiVariables = true;
 
-  networking.hostName = "nixos"; # Define your hostname.
-  # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
-  # Enable networking
+  networking.hostName = "whwuth-X1Carbon-NixOS"; # Define your hostname.
   networking.networkmanager.enable = true;
 
   time.timeZone = "Asia/Shanghai";
 
   sound.enable = true;
   hardware.pulseaudio.enable = true;  
-
  
   environment.variables = {
     EDITOR = "nvim";
@@ -55,10 +51,9 @@
     LC_TIME = "zh_CN.UTF-8";
   };
 
-  # Define a user account. Don't forget to set a password with ‘passwd’.
-  users.users.wangwutang = {
+  users.users.whwuth = {
     isNormalUser = true;
-    description = "wangwutang";
+    description = "whwuth";
     extraGroups = [ "networkmanager" "wheel" ];
   };
 
