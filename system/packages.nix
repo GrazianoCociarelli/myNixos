@@ -1,8 +1,8 @@
 { pkgs, ... }: {
   environment.systemPackages = with pkgs; [
-    aspell
+    # aspell
     arandr
-    btop
+    # btop
     dmenu
     ranger
     xclip
@@ -11,15 +11,15 @@
     fd
     # gcc
     # ghc
-    stack
-    glow
-    gimp
-    iftop
+    # stack
+    # glow
+    # gimp
+    # iftop
     killall
     neofetch
-    pandoc
-    pamixer
-    qbittorrent
+    # pandoc
+    # pamixer
+    # qbittorrent
     tree
     unrar
     unzip
@@ -29,7 +29,7 @@
     gnumake
     picom
 
-    tdesktop
+    # tdesktop
     # texmacs
     # texlive.combined.scheme-full
     python310
@@ -42,6 +42,6 @@
     # texlab
     nil
     python310Packages.python-lsp-server # pylsp
-    haskell-language-server
+    # haskell-language-server
   ];
 }

@@ -7,7 +7,7 @@
           family = "monospace";
           style = "Regular";
         };
-        size = 12;
+        size = 11;
       };
     };
   };
