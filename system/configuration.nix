@@ -76,7 +76,9 @@
       wqy_zenhei
     ];
   };
-  
+
+  services.udisks2.enable = true;
+  services.udisks2.mountOnMedia = true;
   services.v2raya.enable = true;
   services.unclutter.enable = true;
   

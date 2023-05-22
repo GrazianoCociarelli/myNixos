@@ -1,10 +1,8 @@
 { pkgs, ... }: {
   environment.systemPackages = with pkgs; [
-    # aspell
+    aspell
     arandr
-    # btop
     dmenu
-    ranger
     xclip
     slstatus
     feh
@@ -12,13 +10,13 @@
     # gcc
     # ghc
     # stack
-    # glow
-    # gimp
-    # iftop
+    glow
+    gimp
+    iftop
     killall
     neofetch
-    # pandoc
-    # pamixer
+    pandoc
+    pamixer
     qbittorrent
     tree
     unrar
@@ -28,7 +26,9 @@
     git
     gnumake
     picom
-    thunar
+
+    xfce.thunar
+    ranger
 
     tdesktop
     # texmacs
@@ -36,7 +36,7 @@
     python310
 
     # wolfram-engine
-    # mathematica
+    mathematica  # replace init_13.2.1.0.m with an empty one 
 
     vimpager
     # Neovim LSP packages
