@@ -7,9 +7,9 @@
     slstatus
     feh
     fd
-    # gcc
-    # ghc
-    # stack
+    gcc
+    ghc
+    stack
     glow
     gimp
     iftop
@@ -31,18 +31,18 @@
     ranger
 
     tdesktop
-    # texmacs
-    # texlive.combined.scheme-full
+    texmacs
+    texlive.combined.scheme-full
     python310
 
     # wolfram-engine
     mathematica  # replace init_13.2.1.0.m with an empty one 
 
     vimpager
-    # Neovim LSP packages
-    # texlab
+    ## Neovim LSP packages
+    texlab
     nil
     python310Packages.python-lsp-server # pylsp
-    # haskell-language-server
+    haskell-language-server
   ];
 }
