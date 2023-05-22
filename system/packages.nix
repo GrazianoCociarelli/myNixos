@@ -9,8 +9,8 @@
     slstatus
     feh
     fd
-    gcc
-    ghc
+    # gcc
+    # ghc
     stack
     glow
     gimp
@@ -30,17 +30,16 @@
     picom
 
     tdesktop
-    texmacs
-    texlive.combined.scheme-full
+    # texmacs
+    # texlive.combined.scheme-full
     python310
-    ghc
 
-    wolfram-engine
-    mathematica
+    # wolfram-engine
+    # mathematica
 
     vimpager
     # Neovim LSP packages
-    texlab
+    # texlab
     nil
     python310Packages.python-lsp-server # pylsp
     haskell-language-server
