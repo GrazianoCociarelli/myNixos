@@ -19,7 +19,7 @@
     neofetch
     # pandoc
     # pamixer
-    # qbittorrent
+    qbittorrent
     tree
     unrar
     unzip
@@ -28,8 +28,9 @@
     git
     gnumake
     picom
+    thunar
 
-    # tdesktop
+    tdesktop
     # texmacs
     # texlive.combined.scheme-full
     python310

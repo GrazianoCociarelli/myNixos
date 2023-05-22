@@ -9,6 +9,7 @@
         };
         size = 9;
       };
+      env.WINIT_X11_SCALE_FACTOR = "1.5";
     };
   };
 }
