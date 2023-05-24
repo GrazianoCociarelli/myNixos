@@ -1,4 +1,4 @@
 Rebuild with this flake configuration:
 
-sudo nixos-rebuild --flake .#kvm boot
+sudo nixos-rebuild --flake .#laptop boot
 reboot
