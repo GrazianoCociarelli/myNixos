@@ -19,6 +19,7 @@
     pamixer
     pavucontrol
     alsa-utils
+    input-utils
     xorg.xbacklight
     qbittorrent
     tree
