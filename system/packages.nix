@@ -17,6 +17,9 @@
     neofetch
     pandoc
     pamixer
+    pavucontrol
+    alsa-utils
+    xorg.xbacklight
     qbittorrent
     tree
     unrar
@@ -27,7 +30,8 @@
     gnumake
     picom
 
-    xfce.thunar
+    vlc
+
     ranger
 
     tdesktop
