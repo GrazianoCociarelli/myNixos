@@ -37,6 +37,7 @@
     poppler_utils
     djvulibre
     ueberzug
+    nvimpager
     ranger
 
     tdesktop
