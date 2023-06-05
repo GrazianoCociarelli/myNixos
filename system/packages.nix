@@ -20,7 +20,7 @@
     pavucontrol
     alsa-utils
     input-utils
-    xorg.xbacklight
+    xbindkeys
     qbittorrent
     tree
     unrar
@@ -33,6 +33,9 @@
 
     vlc
 
+    poppler
+    poppler_utils
+    ueberzug
     ranger
 
     tdesktop

@@ -2,10 +2,11 @@
   services.xserver = {
     enable = true;
     autorun = false;
-    
+ 
     windowManager.dwm.enable = true;
     displayManager.startx.enable = true;
     
+
     videoDrivers = [ "modesetting" ];
   };
 

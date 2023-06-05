@@ -31,9 +31,13 @@
 
   sound.enable = true;
   hardware.pulseaudio.enable = true;  
- 
+  
+  hardware.acpilight.enable = true;
+
+
+
   environment.variables = {
-    EDITOR = "nvim";
+    EDITOR = "nvim"; 
     VISUAL = "nvim";
   };
 
@@ -86,6 +90,6 @@
   qt.platformTheme = "gtk2";
   qt.style = "gtk2";
  
-  system.stateVersion = "22.11"; # Did you read the comment?
+  system.stateVersion = "23.05"; # Did you read the comment?
 }
 

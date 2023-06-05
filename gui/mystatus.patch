@@ -59,7 +59,7 @@ index d805331..956b4f6 100644
 +	{ disk_free, "%sB  ", "/"},
 +	{ wifi_essid,"%s ", "wlp0s20f3"},
 +//	{ run_command, "Vol%s ", "awk -F\"[][]\"'/Left:/{ print $2}}' <(amixer sget Master)" },
-+	{ run_command, "VOL %s%% ", "/bin/sh -c \"amixer get Master | tail -n1 | grep -Po '\\[\\K[^%]*' | head -n1\"" },
++	{ run_command, "VOL %s%% ", "pamixer --sink 3 --get-volume" },
 +	{ datetime, "%s ", "%a %b %d %R" },
 +	{ battery_perc, "%s%%", "BAT0"}
  };
