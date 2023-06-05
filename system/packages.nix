@@ -35,6 +35,7 @@
 
     poppler
     poppler_utils
+    djvulibre
     ueberzug
     ranger
 
