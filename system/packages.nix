@@ -40,6 +40,14 @@
     nvimpager
     ranger
 
+    libreoffice
+
+    glib
+    usbutils
+    android-file-transfer
+    jmtpfs
+    go-mtpfs
+
     tdesktop
     texmacs
     texlive.combined.scheme-full
@@ -47,6 +55,8 @@
 
     # wolfram-engine
     mathematica  # replace init_13.2.1.0.m with an empty one 
+
+    zoom-us
 
     vimpager
     ## Neovim LSP packages
