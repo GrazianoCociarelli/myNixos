@@ -33,6 +33,8 @@
 
     vlc
     lutris
+    wineWowPackages.stable
+    winetricks
 
     docker
 
