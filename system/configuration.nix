@@ -59,7 +59,7 @@
   users.users.whwuth = {
     isNormalUser = true;
     description = "whwuth";
-    extraGroups = [ "networkmanager" "wheel" "audio" "sound" "video" "input" ];
+    extraGroups = [ "networkmanager" "docker" "wheel" "audio" "sound" "video" "input" ];
   };
 
   programs.fish.enable = true;
