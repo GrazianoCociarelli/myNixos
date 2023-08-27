@@ -34,6 +34,8 @@
     vlc
     lutris
 
+    docker
+
     poppler
     poppler_utils
     djvulibre
