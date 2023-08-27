@@ -32,6 +32,7 @@
     picom
 
     vlc
+    lutris
 
     poppler
     poppler_utils
