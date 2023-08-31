@@ -31,7 +31,7 @@
 
   sound.enable = true;
   hardware.pulseaudio.enable = true;  
-  
+  hardware.bluetooth.enable = true;
   hardware.acpilight.enable = true;
 
 
