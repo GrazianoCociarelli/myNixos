@@ -18,6 +18,7 @@
     pandoc
     pamixer
     pavucontrol
+    blueberry
     alsa-utils
     input-utils
     xbindkeys

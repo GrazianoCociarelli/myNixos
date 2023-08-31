@@ -56,6 +56,8 @@
     LC_TIME = "zh_CN.UTF-8";
   };
 
+  virtualisation.docker.enable = true;
+
   users.users.whwuth = {
     isNormalUser = true;
     description = "whwuth";
