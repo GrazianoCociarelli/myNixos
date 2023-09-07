@@ -58,7 +58,7 @@
     texmacs
     texlive.combined.scheme-full
     python310
-
+    python310Packages.pygments
     # wolfram-engine
     mathematica  # replace init_13.2.1.0.m with an empty one 
 
