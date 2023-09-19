@@ -57,6 +57,7 @@
     tdesktop
     texmacs
     texlive.combined.scheme-full
+    inkscape
     python310
     python310Packages.pygments
     # wolfram-engine
