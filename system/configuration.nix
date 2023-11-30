@@ -41,6 +41,8 @@
     VISUAL = "nvim";
   };
 
+  # environment.sessionVariables.QT_XCB_GL_INTEGRATION = "none";
+
   i18n.defaultLocale = "en_US.UTF-8";
   i18n.inputMethod.enabled = "fcitx5";
   i18n.inputMethod.fcitx5.addons = with pkgs; [ fcitx5-rime fcitx5-configtool ]; 
