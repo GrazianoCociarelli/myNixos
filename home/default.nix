@@ -9,5 +9,6 @@
     ./zathura.nix
     ./mathematica.nix
   ];
+  services.udiskie.enable = true;
   home.stateVersion = "22.11";
 }

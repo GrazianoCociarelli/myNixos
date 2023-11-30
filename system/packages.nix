@@ -54,8 +54,10 @@
     jmtpfs
     go-mtpfs
 
+    anki-bin
     tdesktop
     texmacs
+    pdftk
     texlive.combined.scheme-full
     inkscape
     python310
@@ -64,6 +66,7 @@
     mathematica  # replace init_13.2.1.0.m with an empty one 
 
     zoom-us
+    microsoft-edge
 
     vimpager
     ## Neovim LSP packages
