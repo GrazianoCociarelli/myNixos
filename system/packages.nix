@@ -64,7 +64,7 @@
     python310
     python310Packages.pygments
     # wolfram-engine
-    mathematica  # replace init_13.2.1.0.m with an empty one 
+    #mathematica  # replace init_13.2.1.0.m with an empty one 
 
     zoom-us
     microsoft-edge
@@ -76,6 +76,9 @@
     python310Packages.python-lsp-server # pylsp
     haskell-language-server
   ]
-  # ++[pkgs-stable.mathematica]
+  ++[pkgs-stable.mathematica]
+  ++[(pkgs.writeShellScriptBin "mma" ''
+    QT_XCB_GL_INTEGRATION=none mathematica  
+  '')]
   ;
 }
