@@ -1,3 +1,5 @@
+vim.opt.termguicolors = true
+
 -- -- Mappings.
 -- See `:help vim.diagnostic.*` for documentation on any of the below functions
 local opts = { noremap=true, silent=true }

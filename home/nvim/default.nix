@@ -5,6 +5,8 @@
     vimAlias = true;
     plugins = with pkgs.vimPlugins; [
 
+      base16-vim
+
       vim-nix
       {
         plugin = vim-latex-live-preview;
@@ -39,8 +41,6 @@
           let g:UltiSnipsExpandTrigger="<tab>"
         '';
       }
-
-      nvim-base16
     ];
     
     extraConfig = lib.fileContents ./init.vim;

@@ -72,11 +72,11 @@
   nixpkgs.config.allowUnfree = true;  
 
  fonts = {
-    enableDefaultFonts = true;
+    enableDefaultPackages = true;
     fontconfig.enable = true;
     fontDir.enable = true;
     enableGhostscriptFonts = true;
-    fonts = with pkgs; [
+    packages = with pkgs; [
       noto-fonts
       noto-fonts-cjk
       noto-fonts-emoji
