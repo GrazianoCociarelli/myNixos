@@ -61,8 +61,10 @@
     pdftk
     texlive.combined.scheme-full
     inkscape
-    python310
-    python310Packages.pygments
+    python311
+    python311Packages.tkinter
+    tk
+    python311Packages.pygments
     # wolfram-engine
     #mathematica  # replace init_13.2.1.0.m with an empty one 
 
@@ -73,7 +75,7 @@
     ## Neovim LSP packages
     texlab
     nil
-    python310Packages.python-lsp-server # pylsp
+    python311Packages.python-lsp-server # pylsp
     haskell-language-server
   ]
   ++[pkgs-stable.mathematica]
