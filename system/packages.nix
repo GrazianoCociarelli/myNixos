@@ -24,6 +24,7 @@
     input-utils
     xbindkeys
     qbittorrent
+    filezilla
     tree
     unrar
     unzip
@@ -46,6 +47,7 @@
     ueberzug
     nvimpager
     ranger
+    xfce.thunar
 
     libreoffice
 
