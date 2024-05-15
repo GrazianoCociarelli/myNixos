@@ -1,6 +1,6 @@
 diff --git a/mydwm-6.5/config.def.h b/dwm-6.5/config.def.h
 index ef116c9..9efa774 100644
---- a/mydwm-6.5/config.def.h
+--- a/dwm-6.5/config.def.h
 +++ b/dwm-6.5/config.def.h
 @@ -5,13 +5,13 @@ static const unsigned int borderpx  = 1;        /* border pixel of windows */
  static const unsigned int snap      = 32;       /* snap pixel */
@@ -61,6 +61,3 @@ index ef116c9..9efa774 100644
  };
  
  /* button definitions */
-diff --git a/mydwm-6.5/some-changes.patch b/mydwm-6.5/some-changes.patch
-deleted file mode 100644
-index e69de29..0000000
