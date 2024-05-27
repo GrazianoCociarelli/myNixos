@@ -30,6 +30,7 @@
     unzip
     wget
     zip
+    p7zip
     git
     gnumake
     picom
@@ -59,7 +60,7 @@
 
     anki-bin
     tdesktop
-    texmacs
+    # texmacs
     pdftk
     texlive.combined.scheme-full
     inkscape

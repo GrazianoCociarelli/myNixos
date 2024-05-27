@@ -68,6 +68,12 @@
 
   programs.fish.enable = true;
   users.defaultUserShell = pkgs.fish;
+
+  programs.steam = {
+    enable = true;
+    remotePlay.openFirewall = true;
+    dedicatedServer.openFirewall = true;
+  };
   
   nixpkgs.config.allowUnfree = true;  
 
@@ -94,6 +100,8 @@
   qt.enable = true;
   qt.platformTheme = "gtk2";
   qt.style = "gtk2";
+
+  
  
   system.stateVersion = "23.05"; # Did you read the comment?
 }
