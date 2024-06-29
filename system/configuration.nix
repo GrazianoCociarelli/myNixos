@@ -67,6 +67,7 @@
   };
 
   programs.fish.enable = true;
+  programs.appimage.enable = true;
   users.defaultUserShell = pkgs.fish;
 
   programs.steam = {
@@ -97,6 +98,7 @@
   services.v2raya.enable = true;
   services.unclutter.enable = true;
   
+
   qt.enable = true;
   qt.platformTheme = "gtk2";
   qt.style = "gtk2";
