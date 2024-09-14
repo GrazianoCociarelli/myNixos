@@ -46,7 +46,6 @@
     poppler_utils
     djvulibre
     ueberzug
-    ranger
     lf
     xfce.thunar
 
@@ -68,10 +67,11 @@
     python311Packages.tkinter
     tk
     python311Packages.pygments
+    python311Packages.matplotlib
     # wolfram-engine
     #mathematica  # replace init_13.2.1.0.m with an empty one 
 
-    zoom-us
+    # zoom-us
     microsoft-edge
 
     vimpager

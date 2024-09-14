@@ -29,8 +29,7 @@
 
   time.timeZone = "Asia/Shanghai";
 
-  sound.enable = true;
-  hardware.pulseaudio.enable = true;  
+  hardware.pulseaudio.enable = false;  
   hardware.bluetooth.enable = true;
   hardware.acpilight.enable = true;
 
@@ -44,7 +43,8 @@
   # environment.sessionVariables.QT_XCB_GL_INTEGRATION = "none";
 
   i18n.defaultLocale = "en_US.UTF-8";
-  i18n.inputMethod.enabled = "fcitx5";
+  i18n.inputMethod.enable = true;
+  i18n.inputMethod.type = "fcitx5";
   i18n.inputMethod.fcitx5.addons = with pkgs; [ fcitx5-rime fcitx5-configtool ]; 
   i18n.extraLocaleSettings = {
     LC_ADDRESS = "zh_CN.UTF-8";
