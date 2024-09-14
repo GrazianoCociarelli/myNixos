@@ -21,7 +21,7 @@
     pavucontrol
     blueberry
     alsa-utils
-    input-utils
+
     xbindkeys
     qbittorrent
     filezilla
@@ -46,8 +46,8 @@
     poppler_utils
     djvulibre
     ueberzug
-    nvimpager
     ranger
+    lf
     xfce.thunar
 
     libreoffice

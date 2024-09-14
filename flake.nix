@@ -11,7 +11,7 @@
 
   outputs = inputs@{ self, nixpkgs, nixpkgs-stable, home-manager, ... }: {
     nixosConfigurations = {
-      "laptop" = nixpkgs.lib.nixosSystem rec {
+      "mylaptop" = nixpkgs.lib.nixosSystem rec {
         system = "x86_64-linux";
         
         specialArgs = {
