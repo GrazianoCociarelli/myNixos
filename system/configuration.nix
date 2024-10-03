@@ -89,6 +89,7 @@
       noto-fonts-emoji
       wqy_microhei
       wqy_zenhei
+      newcomputermodern
     ];
   };
 

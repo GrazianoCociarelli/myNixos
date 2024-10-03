@@ -34,6 +34,7 @@
     git
     gnumake
     picom
+    screenkey
 
     vlc
     lutris
@@ -63,16 +64,18 @@
     pdftk
     texlive.combined.scheme-full
     inkscape
-    python311
+    (python311.withPackages (python-pkgs: [
+      python-pkgs.matplotlib
+    ]))
     python311Packages.tkinter
     tk
     python311Packages.pygments
-    python311Packages.matplotlib
     # wolfram-engine
     #mathematica  # replace init_13.2.1.0.m with an empty one 
 
     # zoom-us
     microsoft-edge
+    dropbox
 
     vimpager
     ## Neovim LSP packages
@@ -80,6 +83,7 @@
     nil
     python311Packages.python-lsp-server # pylsp
     haskell-language-server
+
   ]
   ++[pkgs-stable.mathematica]
   ++[(pkgs.writeShellScriptBin "mma" ''
