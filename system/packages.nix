@@ -17,6 +17,7 @@
     killall
     neofetch
     pandoc
+    xournalpp
     pamixer
     pavucontrol
     blueberry
@@ -66,6 +67,7 @@
     inkscape
     (python311.withPackages (python-pkgs: [
       python-pkgs.matplotlib
+      python-pkgs.scipy
     ]))
     python311Packages.tkinter
     tk
