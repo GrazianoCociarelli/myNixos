@@ -1,3 +1,4 @@
+{ pkgs, ... }:
 {
     systemd.user.services.dropbox = {
         Unit = {
