@@ -62,6 +62,7 @@
     anki-bin
     tdesktop
     # texmacs
+    zotero
     pdftk
     texlive.combined.scheme-full
     inkscape
