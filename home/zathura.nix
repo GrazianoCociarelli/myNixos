@@ -2,7 +2,7 @@
   programs.zathura = {
     enable = true;
 
-    options = {
+   /* options = {
       font = "monospace normal 12";
       recolor = true;
       recolor-darkcolor      = "#C5C8C6";
@@ -12,6 +12,6 @@
       default-bg           = "#1D1F21";
       statusbar-basename     = true;
       statusbar-page-percent = true;
-    };
+    };*/
   };
 }

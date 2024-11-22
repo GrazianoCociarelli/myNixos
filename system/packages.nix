@@ -1,6 +1,8 @@
 { pkgs, pkgs-stable, ... }: 
 {
+
   environment.systemPackages = with pkgs; [
+
     aspell
     arandr
     dmenu
@@ -76,7 +78,7 @@
     # wolfram-engine
     #mathematica  # replace init_13.2.1.0.m with an empty one 
 
-    # zoom-us
+    zoom-us
     microsoft-edge
     dropbox
 
@@ -86,6 +88,8 @@
     nil
     python311Packages.python-lsp-server # pylsp
     haskell-language-server
+
+
 
   ]
   ++[pkgs-stable.mathematica]
