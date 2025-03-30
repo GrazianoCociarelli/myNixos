@@ -25,6 +25,7 @@
         '';
       }
 
+
       nvim-lspconfig
 
       nvim-cmp
@@ -41,6 +42,8 @@
           let g:UltiSnipsExpandTrigger="<tab>"
         '';
       }
+
+      julia-vim
     ];
     
     extraConfig = lib.fileContents ./init.vim;

@@ -29,11 +29,18 @@
 
   time.timeZone = "Asia/Shanghai";
 
-  hardware.pulseaudio.enable = false;  
   hardware.bluetooth.enable = true;
   hardware.acpilight.enable = true;
 
-
+  security.rtkit.enable = true;
+  services.pipewire = {
+    enable = true;
+    alsa.enable = true;
+    alsa.support32Bit = true;
+    pulse.enable = true;
+    # If you want to use JACK applications, uncomment this
+    #jack.enable = true;
+  };
 
   environment.variables = {
     EDITOR = "nvim"; 
@@ -85,7 +92,7 @@
     enableGhostscriptFonts = true;
     packages = with pkgs; [
       noto-fonts
-      noto-fonts-cjk
+      noto-fonts-cjk-sans
       noto-fonts-emoji
       wqy_microhei
       wqy_zenhei
@@ -98,6 +105,8 @@
   services.gvfs.enable = true;
   services.v2raya.enable = true;
   services.unclutter.enable = true;
+  services.picom.enable=true;
+  services.picom.backend="glx";
   
 
   qt.enable = true;
