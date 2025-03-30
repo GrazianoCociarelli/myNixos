@@ -2,3 +2,11 @@ Rebuild with this flake configuration:
 
 sudo nixos-rebuild --flake .#laptop boot
 reboot
+
+Or
+
+sudo nixos-rebuild --flake .#laptop switch
+
+Update flake
+
+sudo nix flake update
