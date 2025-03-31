@@ -71,13 +71,13 @@
     (python311.withPackages (python-pkgs: [
       python-pkgs.matplotlib
       python-pkgs.scipy
-      python-pkgs.torch
+      #python-pkgs.torch
       python-pkgs.jupyterlab
-      python-pkgs.torchvision
+      #python-pkgs.torchvision
       python-pkgs.pandas
     ]))
-    julia-bin
-    gr-framework
+    #julia-bin
+    #gr-framework
     ffmpeg  #gksqt julia Plots
     # wolfram-engine
     #mathematica  # replace init_13.2.1.0.m with an empty one 

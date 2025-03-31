@@ -83,6 +83,10 @@
     dedicatedServer.openFirewall = true;
   };
   
+  programs.obs-studio = {
+    enable = true;
+  };
+
   nixpkgs.config.allowUnfree = true;  
 
  fonts = {
@@ -104,7 +108,6 @@
   services.udisks2.mountOnMedia = true;
   services.gvfs.enable = true;
   services.v2raya.enable = true;
-  services.unclutter.enable = true;
   services.picom.enable=true;
   services.picom.backend="glx";
   
